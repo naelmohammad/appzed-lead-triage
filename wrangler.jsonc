@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "appzed-lead-triage",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "ai": {
+    "binding": "AI"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "appzed-lead-triage-leads"
+    }
+  ]
+}
