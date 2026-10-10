@@ -80,7 +80,7 @@ function pickChoice(answer, fallback) {
 function toNumber(answer, fallback) {
   if (typeof answer === "number") return answer;
   if (answer && typeof answer === "object") {
-    for (const k of ["score", "probability", "value"]) {
+    for (const k of ["score", "probability", "value", "noul"]) {
       if (typeof answer[k] === "number") return answer[k];
     }
   }
